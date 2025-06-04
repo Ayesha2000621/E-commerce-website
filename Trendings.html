@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendings</title>
+    <link rel="stylesheet" href="stylesheet VI.css">
+</head>
+<body>
+    <section>
+        <div class="container flex">
+            <div class="left">
+                <div class="main-img">
+                    <img src="image39-1.jpg" class="slide">
+                </div>
+                <div class="option flex">
+                    <img src="image39-1.jpg" onclick="img('image39-1.jpg')">
+                    <img src="image39-2.jpg" onclick="img('image39-2.jpg')">
+                    <img src="image39-3.jpg" onclick="img('image39-3.jpg')">
+                    <img src="image39-4.jpg" onclick="img('image39-4.jpg')">
+                    <img src="image39-5.jpg" onclick="img('image39-5.jpg')">
+                </div>
+            </div>
+            <div class="right">
+            <h3>Elastic High Waisted Palazzo Pants</h3>
+            <h4>$32.99</h4>
+            <p>Material: Women's casual high waisted long pants are made from high-quality lightweight fabric. 
+                breathable and soft to keep you comfortable all day long. Perfect to wear for spring, summer, and fall.<br>
+                Features: Elastic Smocked high waist, straight wide leg, loose fit casual long lounge pants with pockets, 
+                not see-through, beach pants for women, flowy dressy pants comfy and chic. Available in solid color and floral print.</p>
+            <h5>Color-Rose Gold</h5>
+            <div class="color flex">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h5>Number</h5>
+            <div class="add flex1">
+                <span>-</span>
+                <label>1</label>
+                <span>+</span>
+            </div>
+            <button>Add to cart</button>
+        </div>
+    </div>
+    </section>
+<!----------------JS for trendings------------>
+<script>
+    function img(anything){
+        document.querySelector('.slide').src = anything;
+    }
+    function change(change){
+        const line = document.querySelector('.home');
+        line.style.background = change;
+    }
+</script>
+</body>
+</html>
